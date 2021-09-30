@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow Bold', Arial, Helvetica, sans-serif;
+}
+header{
+    background: rgb(49, 48, 48);
+}
+
+body{
+    /* background: linear-gradient(to bottom,rgb(43, 39, 39), rgb(221, 34, 34),rgb(43, 39, 39)); */ 
+    background-image: url(/img/269.jpg); 
+    background-size: 27%;
+    /* height: 100%; */
+    /* background-repeat: no-repeat; */
+}
+
+/*-------------------HEADER----------------*/
+header{
+    position: relative;
+    clear: both;
+}
+
+img.logo{
+    margin:auto;
+	display:block;
+    height: 100px;
+}
+
+h1{
+    text-align: center;
+}
+/*---------------NAV------------------*/
+nav.responsive{
+    display: none;
+}
+nav{
+    background-color: rgb(15, 15, 15);
+}
+nav.escritorio{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;   
+    /*background-color: #333;*/
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover{ /*li a:hover:not(.active) el active era una clase de a. q habia
+    nor(.active) es para q no le aplique a los a q tenga esa clase*/
+    background-color: rgb(92, 92, 91);
+  }
+
+/*-----menu------*/
+
+nav.escritorio ul li{
+    margin: 0;
+    list-style: none;
+    float: left;
+    
+}
+
+/*---registro------*/
+nav.escritorio div.resgistro{    
+     
+    width: auto;
+}
+
+
+
+/*-----------------BODY*---------------*/
+div.seccion{
+    
+    /* border-radius: 15px; */
+    padding: 0 10px 15px;
+    margin: 10px;
+    border-bottom: 1px dotted white;
+    /* background: rgba(141, 140, 140, 0.335); */
+}
+
+
+div.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+
+div.producto{
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-top: 10px;
+}
+
+div.producto:hover{
+    box-shadow: 1px 5px 10px rgb(36, 35, 35);
+    background-color: rgba(247, 244, 244, 0.5);
+    cursor: pointer;
+}
+
+div.producto:hover > img{
+    border: 8px solid white;    
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.3s;
+}
+
+div.producto img{
+    
+    border-radius: 10px;
+}
+
+div.producto > h3{
+    text-align: center;
+}
+
+/*div.producto > h2{
+    text-align: left;
+}*/
+
+div.producto {    
+    text-align: center;
+}
+
+/*---------productos-------------*/
+h1{
+    margin: auto;
+    background: rgba(237, 241, 8, 0.698);
+    border-radius: 15px;
+    width: 50%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    -webkit-text-stroke: 2px black;
+}
+h2{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 5px;    
+}
+
+div.producto h3{
+    margin-top: 5px;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .agregar {
+    background-color: #4caf4f00; 
+    border: 2px solid rgb(66, 65, 65);
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button5:hover {
+    background-color: rgb(66, 65, 65);;
+    color: white;
+  }
+
+  .button5:active {
+    background-color: #0c0c0c;
+    color: white;
+  }
+
+/*---------FOOTER---------------*/
+footer{
+    position: relative;
+    clear: both;
+    background: black;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+a.inicio i{
+    font-size: 50px;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    padding: 5px;
+    color: rgb(224, 144, 15);
+    text-shadow: 5px 5px 5px black;
+    
+}
+
+a.inicio i:active{
+    color: black;
+}
+
+/*----------------REGISTRO-----------------*/
+
+.container-fluid{
+    
+    min-height: 68vh;
+}
+
+label.form-label{
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    nav.escritorio > div{
+        display: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    nav.responsive{
+        clear: both;
+        display: block;
+        
+    }
+
+    nav ul{       
+        display: none;
+        
+    }
+
+    nav.responsive:hover  ul{        
+        display: block;
+        
+    }
+
+
+    nav.responsive {
+        font-size: 30px;
+        color: aliceblue;
+        padding: 6px 20px;
+        
+    }
+
+    nav.responsive div {
+        float: center;
+        /*background-color: aqua;*/
+    }
+
+    .imenu{
+        text-align: center;
+    }
+   
+    
+}
